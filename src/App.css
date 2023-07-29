@@ -1,0 +1,39 @@
+  .App {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: lato, sans-serif;
+    background-color: #1b1b32;
+  }
+  
+  .freecodecamp-logo-contenedor {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+  }
+  
+  .freecodecamp-logo-imagen {
+    height: 80px;
+  }
+
+  .contenedor-calculadora {
+    height: 600px;
+    width: 400px;
+    padding: 14px;
+    background-color: #99c9ff;
+    border-radius: 20px;
+    border: 5px solid white;
+  }
+
+  .fila {
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
