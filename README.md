@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Página Web con una Calculadora
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En esta página web, encontrarás una calculadora básica que te permitirá realizar operaciones matemáticas simples. La aplicación está desarrollada utilizando tecnologías web como HTML, CSS y JavaScript, y podrás ejecutarla localmente en tu máquina.
 
-## Available Scripts
+## Instrucciones de Ejecución
 
-In the project directory, you can run:
+Para ejecutar la calculadora en tu máquina, sigue estos pasos:
 
-### `npm start`
+1. Asegúrate de tener instalado Git y Node.js en tu computadora.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Abre una terminal o línea de comandos en el directorio donde deseas clonar el repositorio de la calculadora.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Clona el repositorio utilizando el siguiente comando:
+-git clone https://github.com/tu-usuario/calculadora.git
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Ingresa al directorio del repositorio clonado:
+-cd Calculadora
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Instala las dependencias necesarias:
+-npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. Ejecuta la aplicación:
+-npm start
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+7. La calculadora se iniciará en tu navegador predeterminado y estará disponible en la siguiente dirección:
+-http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Uso de la Calculadora
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Una vez que la aplicación esté cargada en tu navegador, verás una interfaz de calculadora sencilla con botones numéricos y operadores básicos.
 
-## Learn More
+1. Haz clic en los botones numéricos para ingresar los números en la pantalla de la calculadora.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Utiliza los botones de operadores (+, -, *, /) para realizar las operaciones matemáticas.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Para obtener el resultado, presiona el botón "=".
 
-### Code Splitting
+4. Si deseas borrar un número o una operación, utiliza el botón "C" (Clear).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+¡Listo! Ahora puedes usar la calculadora para realizar operaciones matemáticas rápidas y sencillas en tu navegador.
 
-### Analyzing the Bundle Size
+Recuerda que esta es solo una calculadora básica, y puedes personalizarla y mejorarla según tus necesidades y conocimientos de desarrollo web.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+¡Diviértete calculando! 😄🔢
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
