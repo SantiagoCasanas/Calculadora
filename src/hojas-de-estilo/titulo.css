@@ -1,0 +1,12 @@
+.contenedor-titulo {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+  }
+  
+  .imagen-titulo {
+    height: 100px;
+  }

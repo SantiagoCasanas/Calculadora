@@ -2,10 +2,10 @@ import './App.css';
 import Boton from './componentes/Boton';
 import BotonClear from './componentes/BotonClear';
 import Pantalla from './componentes/Pantalla';
-import freeCodeCampLogo from './imagenes/freecodecamp-logo.png';
 import { evaluate } from 'mathjs';
 
 import { useState } from 'react';
+import Titulo from './componentes/Titulo';
 
 
 
@@ -13,8 +13,27 @@ function App() {
 
   const [input, setInput] = useState('');
 
+  const esOperador = params => {
+    return isNaN(params) && (params !== '.') && (params !== '=') && (params !== '')
+  }
+
+  const esNumero = params => {
+    return !isNaN(params)
+  }
+
+  
+
   function cambiarInput(params) {
-    setInput(input + params)
+    let ultimoSimbolo = input.charAt(input.length - 1)
+    
+    if(input==='' && (params==='*' ||  params==='/')){
+      alert("Ingrese valores para realizar los cálculos")
+    }else if(esNumero(ultimoSimbolo) || esNumero(params)){
+      setInput(input + params)
+    }else if(esOperador(ultimoSimbolo) && esOperador(params)) {
+      setInput(input.substring(0, input.length - 1) + params)
+    }
+    
   }
 
   function limpiarInput() {
@@ -23,7 +42,7 @@ function App() {
 
   function resolverOperacion() {
     if (input){
-      setInput(evaluate(input))
+      setInput(evaluate(input).toString())
     } else {
       alert("Ingrese valores para realizar los cálculos")
     }
@@ -33,13 +52,7 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='freecodecamp-logo-contenedor'>
-        <img
-          className='freecodecamp-logo-imagen'
-          src={freeCodeCampLogo}
-          alt='Logo de freeCodeCamp'
-        />
-      </div>
+      <Titulo nombreImagen={'Calculator'}/>
       <div className='contenedor-calculadora'>
         <Pantalla input={input}/>
         <div className='fila'>
@@ -67,7 +80,7 @@ function App() {
           <Boton manejarClic={cambiarInput}>/</Boton>
         </div>
         <div className='fila'>
-          <BotonClear limpiarConsola={ limpiarInput }>Limpiar</BotonClear>
+          <BotonClear limpiarConsola={ limpiarInput }>Clear</BotonClear>
         </div>
       </div>
     </div>

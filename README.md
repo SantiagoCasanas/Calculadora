@@ -40,7 +40,7 @@ Una vez que la aplicación esté cargada en tu navegador, verás una interfaz de
 
 3. Para obtener el resultado, presiona el botón "=".
 
-4. Si deseas borrar un número o una operación, utiliza el botón "C" (Clear).
+4. Si deseas borrar un número o una operación, utiliza el botón "Clear".
 
 ¡Listo! Ahora puedes usar la calculadora para realizar operaciones matemáticas rápidas y sencillas en tu navegador.
 
